@@ -1,7 +1,7 @@
 def nyc_pigeon_organizer(data)
   pigeon_list = {}
   data.each do |key,value|
-    value.each do [memo]
+    value.each do |memo|
     if pigeon_list[memo]
       if pigeon_list[memo][key]
       pigeon_list[memo][key].push(value)
