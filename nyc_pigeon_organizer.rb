@@ -11,7 +11,8 @@ def nyc_pigeon_organizer(data)
       end
     else
       pigeon_list[memo] = { 
-        memo
+        memo => key 
+      }
       pigeon_list[memo][key] = []
       pigeon_list[memo][key].push(value)
       end
