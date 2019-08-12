@@ -3,11 +3,11 @@ def nyc_pigeon_organizer(data)
   data.each do |key,value|
     value.each do |key2,name|
     if pigeon_list[name]
-      if pigeon_list[memo][key]
-      pigeon_list[memo][key].push(value)
+      if pigeon_list[name][key]
+      pigeon_list[name][key].push(value)
       else
-        pigeon_list[memo][key] = []
-        pigeon_list[memo][key].push(value)to_s
+        pigeon_list[name][key] = []
+        pigeon_list[name][key].push(value).to_s
       end
     else
       pigeon_list[name] = {}
