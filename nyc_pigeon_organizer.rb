@@ -6,12 +6,10 @@ def nyc_pigeon_organizer(data)
         
     unless pigeon_list[name] 
       pigeon_list[name] = {}
-    
+    end
     unless pigeon_list[name][key]
         pigeon_list[name][key] = []
-        
-        
-    else
+     end   
       
       pigeon_list[name][key] = []
       pigeon_list[name][key].push(key2).to_s
