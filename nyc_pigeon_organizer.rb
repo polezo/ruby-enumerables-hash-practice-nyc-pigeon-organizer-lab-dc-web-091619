@@ -4,15 +4,15 @@ def nyc_pigeon_organizer(data)
     value.each do |key2,name|
     if pigeon_list[name]
       if pigeon_list[name][key]
-      pigeon_list[name][key].push(value)
+      pigeon_list[name][key].push(key2)
       else
         pigeon_list[name][key] = []
-        pigeon_list[name][key].push(value).to_s
+        pigeon_list[name][key].push(key2).to_s
       end
     else
       pigeon_list[name] = {}
       pigeon_list[name][key] = []
-      pigeon_list[name][key].push(value).to_s
+      pigeon_list[name][key].push(key2).to_s
       end
     end
   end
